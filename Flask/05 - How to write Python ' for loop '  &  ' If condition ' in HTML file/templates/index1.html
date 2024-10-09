@@ -1,0 +1,53 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #id1{
+            color: skyblue;
+        }
+
+        .class1{
+            color: green;
+        }
+        .class2{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is our FLASK app</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, nemo.</p>
+
+    <!-- For Loop -->
+    {% for i in content %}
+    <p id="id1">{{ i }}</p>
+
+
+    <!-- if condition -->
+
+    {% if i == 'ML' %}
+    <p class="class1">This course is free</p>
+    {% endif %}  <!--we need to write the 'IF' condition in betwwen the 'FOR' loop -->
+
+    {% if i == 'SQL' %}
+    <p class="class1">This course is free</p>
+    {% endif %} 
+
+    {% if i == 'HTML' %}
+    <p class="class2">This course is premimum</p>
+    {% endif %} 
+    
+
+    {% endfor %}  <!-- FOR loop end-->
+
+    
+   
+    
+</body>
+</html>

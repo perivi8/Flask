@@ -1,0 +1,121 @@
+body{
+    background-image: url('https://media.istockphoto.com/id/1758416916/photo/excercise-equipment-in-a-modern-gym.jpg?s=1024x1024&w=is&k=20&c=C2wXbOFgKvwIifgdR9XJhw53gYlViYkRLJ-PNlm05KY=');
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 541px; 
+}
+
+.container{
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px yellow;
+    width: 400px; 
+}
+
+.header{
+    background-color: #bac15d;
+    padding: 20px 40px;
+     
+}
+
+.header h2{
+    margin: 0;
+}
+
+.form{
+    padding: 30px 40px;
+}
+
+
+.field input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;   /*This one used to ocuppy the whole line*/
+    padding: 10px;
+    width: 100%; 
+}
+
+#correct{
+    position: relative;
+    left: 308px;
+    top: -30px;
+    visibility: hidden;
+}
+
+#wrong{
+    position: relative;
+    left: 280px;
+    top: -30px;
+    visibility: hidden;
+}
+
+.field small{
+    position: relative;
+    left: -50px;
+    top: -11px;
+    visibility: hidden;
+}
+
+#button{
+    border-radius: 4px;
+    padding: 10px;
+    width: 340px;
+}
+
+
+
+/* If we want the more detail about this topic refer below link : */
+
+/* https://youtu.be/xC_dgeLqcpI */  /* Telugu */
+
+/* https://youtu.be/rsd4FNGTRBw  */  /* English */
+
+
+
+/* NOTE :- 1*/
+
+/* Actually " success " class was not present in HTML file*/
+/* First we need to create any  name(success) and create that name class in " JS " */
+
+
+/* NOTE = 2 */
+
+/* Don't give space between the "field" & "success */
+/* If we give space means then "field" act as a "parent" , "success" act as a "child" */
+
+
+
+.field.success input{             /*we need to add "success" to field , this "success" we will add in JS file*/
+    border-color: #2ecc71;
+}
+
+.field.error input{              /*we need to add "error" to field , this "error" we will add in JS file*/
+    border-color: #e74c3c;
+}
+
+.field.success #correct{
+    visibility: visible;
+    color: #2ecc71;
+}
+
+.field.error #wrong{
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.field.error small{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.field.error #correct{
+    visibility:hidden;
+}
+
+.field.success #wrong{
+    visibility: hidden;
+}
+

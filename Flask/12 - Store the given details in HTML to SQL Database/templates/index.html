@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Record</title>
+</head>
+<body>
+    <h1>Add a New Record</h1>
+
+    <form action="/add" method="post">   <!-- Note 1 -->
+
+        <label for="player_id">Player_id:</label>
+        <input type="text" required id="player_id" name="player_id"><br><br>
+
+        <label for="player_name">Player_name:</label>
+        <input type="text" required id="player_name" name="player_name"><br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
+
+
+
+<!--  NOTES -->
+
+<!-- Note 1 :- we need to give the [ action = "/add" ] is same as the " route name " -->
